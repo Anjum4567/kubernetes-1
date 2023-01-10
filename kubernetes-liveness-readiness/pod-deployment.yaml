@@ -16,7 +16,7 @@ spec:
       - image: deekshithsn/probe-demo
         name: probe-demo
         env:
-        - name: START_DELAY
+        - name: START_DELAY  #my image has a env varable which mns which is start delay ( pod will sleep for 60 sec then only my application will start) 
           value: "60"        
         ports:
         - containerPort: 8080
