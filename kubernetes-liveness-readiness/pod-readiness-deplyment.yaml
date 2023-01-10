@@ -22,7 +22,7 @@ spec:
         - containerPort: 8080
         readinessProbe:
           httpGet:
-            path: /health
+            path: /health   #health endpoint of the application
             port: 8080
           initialDelaySeconds: 60
           periodSeconds: 5
